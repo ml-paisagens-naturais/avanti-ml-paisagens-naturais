@@ -1,0 +1,31 @@
+# Configuração para o pipeline de melhorias na classificação de paisagens naturais
+
+# Configurações do dataset
+dataset:
+  path: "C:\\Dataset\\intel-image-classification" # Caminho base para o dataset atualizado para corresponder ao config.yaml
+  train_dir: "seg_train/seg_train" # Diretório de treinamento (pode ser "train" se diferente)
+  test_dir: "seg_test/seg_test" # Diretório de teste (pode ser "test" se diferente)
+
+# Melhorias a serem aplicadas
+enhancements:
+  # Detecção de imagens duplicadas
+  detect_duplicates: true # Ativar detecção de duplicatas
+  threshold: 3 # Limiar para considerar imagens como similares (menor = mais restritivo)
+
+  # Modelo NatureLightNet
+  use_naturelight: true # Usar modelo leve NatureLightNet
+  apply_distillation: true # Aplicar destilação de conhecimento do MobileNet
+  distillation_epochs: 5 # Épocas para destilação de conhecimento
+
+  # Otimização hierárquica
+  hierarchical_optim: false # Ativar otimização hierárquica (requer mais tempo)
+
+  # Amostragem inteligente
+  smart_sampling: true # Ativar amostragem inteligente
+  sampling_ratio: 0.5 # Fração do dataset original a ser usada (0.5 = 50%)
+
+# Configurações de saída
+output:
+  save_models: true # Salvar modelos gerados
+  visualize_results: true # Gerar visualizações
+  output_dir: "results/enhancement_pipeline" # Diretório para saída de resultados

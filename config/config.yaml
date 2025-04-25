@@ -1,0 +1,29 @@
+dataset:
+  batch_size: 16
+  img_size: 224
+  path: C:\\Dataset\\intel-image-classification
+flow_control:
+  run_compression: false
+  run_cross_validation: false
+  run_data_exploration: true
+  run_dataset_prep: true
+  run_duplicate_detection: true
+  run_ensemble: true
+  run_evaluation: true
+  run_export: true
+  run_final_report: true
+  run_optimization: false
+  run_training: true
+  run_visualization: true
+models:
+  use_efficientnet: true
+  use_mobilenet: true
+  use_resnet: true
+  use_vit: true
+training:
+  epochs: 10
+  gamma: 0.1
+  k_folds: 5
+  learning_rate: 0.001
+  seed: 42
+  step_size: 7
