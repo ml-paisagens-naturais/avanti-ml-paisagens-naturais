@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Classificação de Paisagens Naturais
 
 Este repositório contém um notebook Jupyter e diversos arquivos auxiliares para a classificação de paisagens naturais utilizando técnicas de aprendizado de máquina e deep learning. O projeto está modularizado seguindo boas práticas de Engenharia de Software, garantindo escalabilidade, reuso de código e facilidade de manutenção.
@@ -103,9 +102,3 @@ O projeto segue princípios de Engenharia de Software:
 ## Conclusão
 
 O projeto fornece uma abordagem completa para classificação de paisagens naturais com aprendizado de máquina, utilizando boas práticas de Engenharia de Software. O uso de diferentes modelos, otimização e técnicas de visualização torna a solução robusta e eficiente.
-=======
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
-
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
->>>>>>> 409259cb3f36efb78c98848ea66bedc22dccfe83
